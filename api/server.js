@@ -19,7 +19,7 @@ const Progress = require('../models/progress');
 
 // --- RUTAS PÚBLICAS ---
 app.get('/', (req, res) => {
-  res.send('🚀 API de voKblo B1 funcionando correctamente');
+  res.send('🚀 API de voKblo Idioms funcionando correctamente');
 });
 
 // --- AUTENTICACIÓN Y REGISTRO ---
@@ -80,7 +80,7 @@ app.post('/progress', async (req, res) => {
         );
 
         res.status(201).json({ 
-            message: "¡Puntos y ranking actualizados!", 
+            message: "¡Points ranking updated!", 
             totalXP: userActualizado.stats.points 
         });
     } catch (error) {
